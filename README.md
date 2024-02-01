@@ -1,6 +1,8 @@
 # Todo Manager
 
 A secure and efficient Todo List application with user registration and login features. The project utilizes bcrypt for password hashing and MongoDB for data storage.
+The project is deployed on [Render](https://to-do-q8pb.onrender.com)
+
 
 ## Table of Contents
 - [Features](#features)
