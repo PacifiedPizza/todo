@@ -1,0 +1,39 @@
+<%- include('./partials/header.ejs') %>
+
+    <div class="container">
+        <h1>My To-do</h1>
+        <h2 style="font-size: small; color: gray;">(click on the list to done)</h2>
+    <a class="addbtn" href="/logout" role="button">Log Out</a>
+
+        <ul class="list-item">
+            <% todos.forEach((item, index)=> { %>
+                <li>
+                    <%= item %>
+                        <form action="/delete-todos" method="POST">
+                            <input type="hidden" name="userindex" value="<%= index %>">
+                            <button type="submit" class="deletebtn">Delete</button>
+                        </form>
+                </li>
+                <% }); %>
+        </ul>
+
+        <form action="/update-todos" method="post">
+            <div class="container">
+                <input onfocus="this.value=''" type="text" name="newitem" id="myInput" placeholder="Add here">
+                <input type="hidden" name="username" value="<%= loggedInUsername %>">
+
+                <button class="addbtn">Add</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        var list = document.querySelector('ul');
+        list.addEventListener('click', function (ev) {
+            if (ev.target.tagName === 'LI') {
+                ev.target.classList.toggle('checked');
+            }
+        }, false);
+    </script>
+
+    <%- include('./partials/footer.ejs') %>

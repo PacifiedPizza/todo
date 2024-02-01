@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+        background-color: #f9f9f9; /
+
+}
+#myInput {
+    padding: 10px; 
+}
+.container {
+      max-width: 600px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.addbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.addbtn:hover {
+    background-color: #45a049;
+}
+
+.list-item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-item li {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checked {
+    background: #302e2e;
+    color: #ff0303;
+    text-decoration: line-through;
+}
+
+.deletebtn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.deletebtn:hover {
+    background-color: #d32f2f;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.login-btn,
+.register-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover,
+.register-btn:hover {
+    background-color: #45a049;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.copyright {
+    margin: 0;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.copyright span {
+    margin-left: auto;
+    padding-right: 10px; 
+}
